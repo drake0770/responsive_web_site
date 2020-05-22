@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <link href="thumbnail-scroller-master/jquery.mThumbnailScroller.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="thumbnail-scroller-master/jquery.mThumbnailScroller.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark mx-auto">
+                <div class='col-2 col-md-2 col-lg-4 p-0'>
+                    <a class="navbar-brand " href="#"><span class="large_text"><span
+                                class='bold'>MODUS</span>versus</span></a></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-6 col-md-9 col-lg-8 mx-auto" id="navbarNavDropdown">
+                    <ul class="navbar-nav  ml-1">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="#">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ml-1">
+                            <a class="nav-link text-white" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item ml-1">
+                            <a class="nav-link text-white" href="#">SERVICES</a>
+                        </li>
+                        <li class="nav-item dropdown drophover ml-1">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg class="bi bi-chevron-down" width="0.7em" height="0.7em" viewBox="0 0 16 16"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z"
+                                        clip-rule="evenodd" /></svg> PORTFOLIO </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">
+                                    <svg class="bi bi-chevron-right" width="1em" height="0.8em" viewBox="0 0 16 16"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z"
+                                            clip-rule="evenodd" /> </svg> Portfolio 2 column page</a>
+                                <a class="dropdown-item" href="#">
+                                    <svg class="bi bi-chevron-right" width="1em" height="0.8em" viewBox="0 0 16 16"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z"
+                                            clip-rule="evenodd" /> </svg> Portfolio 2 column page</a>
+                                <a class="dropdown-item" href="#">
+                                    <svg class="bi bi-chevron-right" width="1em" height="0.8em" viewBox="0 0 16 16"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z"
+                                            clip-rule="evenodd" /> </svg> Portfolio 2 column page</a> </div>
+                        </li>
+                        <li class="nav-item ml-1">
+                            <a class="nav-link text-white" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item ml-1">
+                            <a class="nav-link text-white" href="#">FEATURES</a>
+                        </li>
+                        <li class="nav-item ml-1">
+                            <a class="nav-link text-white" href="#">CONTACT</a>
+                        </li>
+                        <li class="pl-2">
+                            <a class="nav-link text-white" href="#"> <svg class="bi bi-search" width="1em" height="1em"
+                                    viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+                                        clip-rule="evenodd" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+                                        clip-rule="evenodd" /> </svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container-fkuid">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-red-text">VESTIBULUM</div>
+                            <div class="carousel-opacity-text">Nulla vitae elit libero, a pharetra augue mollis
+                                interdum.</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-red-text">VESTIBULUM</div>
+                            <div class="carousel-opacity-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-red-text">VESTIBULUM</div>
+                            <div class="carousel-opacity-text">Praesent commodo cursus magna, vel scelerisque nisl
+                                consectetur.</div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev " href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <div class=" carousel-button mr-lg-2">
+                        <svg class="bi bi-chevron-double-left mt-2 " width="1.6em" height="1.3em" viewBox="0 0 16 16"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8.354 1.646a.5.5 0 010 .708L2.707 8l5.647 5.646a.5.5 0 01-.708.708l-6-6a.5.5 0 010-.708l6-6a.5.5 0 01.708 0z"
+                                clip-rule="evenodd" />
+                            <path fill-rule="evenodd"
+                                d="M12.354 1.646a.5.5 0 010 .708L6.707 8l5.647 5.646a.5.5 0 01-.708.708l-6-6a.5.5 0 010-.708l6-6a.5.5 0 01.708 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <div class=" carousel-button carousel-button-left  ml-lg-2">
+                        <svg class="bi bi-chevron-double-right mt-2" width="1.6em" height="1.3em" viewBox="0 0 16 16"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L9.293 8 3.646 2.354a.5.5 0 010-.708z"
+                                clip-rule="evenodd" />
+                            <path fill-rule="evenodd"
+                                d="M7.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L13.293 8 7.646 2.354a.5.5 0 010-.708z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <ol class="carousel-indicators ">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </section>
+    <section>
+        <div class="container topservices">
+            <div class="row">
+                <div class="col-9  pt-2  pb-2 col-lg-10">
+                    <h3 class="">Some of our top services</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tenetur corrupti
+                        ut.</p>
+                </div>
+                <div class="col-3 col-lg-2  m-auto">
+                    <button type="button" class="btn btn-danger">VIEW MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container p-1 mb-5">
+            <div class="row m-2">
+                <div class="col-12 col-sm-6 col-lg-3 mt-5">
+                    <div class=" card m-auto">
+                        <div class="fa-icon "> <i class="fa fa-thumbs-up"></i>
+                            <p>SUSPENDISSE</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text  text-center">Windows talking painted pasture yet its express
+                                parties use. Sure last upon he same as knew next.</p>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary btn-cart-bottom">read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3  mt-5">
+                    <div class=" card m-auto">
+                        <div class="fa-icon "> <i class="fa fa-key"></i>
+                            <p>MAECENAS</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text  text-center">Windows talking painted pasture yet its express
+                                parties use. Sure last upon he same as knew next.</p>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary btn-cart-bottom">read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mt-5 ">
+                    <div class=" card m-auto">
+                        <div class="fa-icon "> <i class="fa fa-flag"></i>
+                            <p>ALIQUAM</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text  text-center">Windows talking painted pasture yet its express
+                                parties use. Sure last upon he same as knew next.</p>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary btn-cart-bottom">read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mt-5 ">
+                    <div class=" card m-auto">
+                        <div class="fa-icon "> <i class="fa fa-flask"></i>
+                            <p>HABITASSE</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text  text-center">Windows talking painted pasture yet its express
+                                parties use. Sure last upon he same as knew next.</p>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary btn-cart-bottom">read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio mb-5">
+        <div class="container ">
+            <div class=" row mb-5">
+                <div class="col-12 mb-5 mt-3">
+                    <h2 class="text-center portfolio-text-h1">WHY MODUS VERSUS?</h2>
+                    <h6 class="text-center">Capacitance cascading integer reflective data development high bus cache
+                        dithering transponder.</h6>
+                </div>
+                <div class="col-xs-4 zoom"><img class="" src="img/slider.png" alt="Gallery1" /></div>
+                <div class="col-xs-4 zoom"><img class="" src="img/slider.png" alt="Gallery2" /></div>
+                <div class="col-xs-4 zoom"><img class="" src="img/slider.png" alt="Gallery3" /></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container info mb-5">
+            <div class="row ">
+                <div class="col-6 col-lg-3">
+                    <h5 class="gray-title">Why Choose Us?</h5>
+                    <div><span class="red-color-text"><svg class="bi bi-arrow-right-short" width="1.5em" height="2em"
+                                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.793 8 8.146 5.354a.5.5 0 010-.708z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 01.5-.5H11a.5.5 0 010 1H4.5A.5.5 0 014 8z"
+                                    clip-rule="evenodd" />
+                            </svg></span><small>Quisque mass iqsum</small></div>
+                    <div><span class="red-color-text"><svg class="bi bi-arrow-right-short" width="1.5em" height="2em"
+                                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.793 8 8.146 5.354a.5.5 0 010-.708z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 01.5-.5H11a.5.5 0 010 1H4.5A.5.5 0 014 8z"
+                                    clip-rule="evenodd" />
+                            </svg></span><small>Maecenas lorem augue, egestas</small></div>
+                    <div><span class="red-color-text"><svg class="bi bi-arrow-right-short" width="1.5em" height="2em"
+                                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.793 8 8.146 5.354a.5.5 0 010-.708z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 01.5-.5H11a.5.5 0 010 1H4.5A.5.5 0 014 8z"
+                                    clip-rule="evenodd" />
+                            </svg></span><small>Cras vitae felis at lacus eleifend</small></div>
+                    <div><span class="red-color-text"><svg class="bi bi-arrow-right-short" width="1.5em" height="2em"
+                                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.793 8 8.146 5.354a.5.5 0 010-.708z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 01.5-.5H11a.5.5 0 010 1H4.5A.5.5 0 014 8z"
+                                    clip-rule="evenodd" />
+                            </svg></span><small>Etiam auctor diam pellentesque</small></div>
+                    <div><span class="red-color-text"><svg class="bi bi-arrow-right-short" width="1.5em" height="2em"
+                                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.793 8 8.146 5.354a.5.5 0 010-.708z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 01.5-.5H11a.5.5 0 010 1H4.5A.5.5 0 014 8z"
+                                    clip-rule="evenodd" />
+                            </svg></span><small>Nulla ac massa at dolor</small></div>
+                    <div><span class="red-color-text"><svg class="bi bi-arrow-right-short" width="1.5em" height="2em"
+                                viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.793 8 8.146 5.354a.5.5 0 010-.708z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 01.5-.5H11a.5.5 0 010 1H4.5A.5.5 0 014 8z"
+                                    clip-rule="evenodd" />
+                            </svg></span><small>Condimentum eleifend vitae vitae</small></div>
+                </div>
+                <div class="col-12 order-2 order-lg-1 mt-4 col-lg-6  ">
+                    <small>Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque
+                        lectus vehicula mattis. Nulla ac massa at dolor condimentum eleifend vitae vitae urna.</small>
+                    <div class='mt-4 row col-12'>
+                        <div class="col-3 diagram-block">
+                            <div class="diagram-img"><img src="img/50.png" class="d-block w-100" alt="..."></div>
+                            <div class="diagram-value   mt-3">50</div>
+                            <div class="diagram-text">SUSPENDISSE</div>
+                        </div>
+                        <div class="col-3 diagram-block">
+                            <div class="diagram-img"><img src="img/70.png" class="d-block w-100" alt="..."></div>
+                            <div class="diagram-value mt-3">70</div>
+                            <div class="diagram-text">MAECENAS</div>
+                        </div>
+                        <div class="col-3 diagram-block">
+                            <div class="diagram-img"><img src="img/80.png" class="d-block w-100" alt="..."></div>
+                            <div class="diagram-value mt-3">80</div>
+                            <div class="diagram-text">ALIQUAM</div>
+                        </div>
+                        <div class="col-3 diagram-block">
+                            <div class="diagram-img"><img src="img/100.png" class="d-block w-100" alt="..."></div>
+                            <div class="diagram-value mt-3">100</div>
+                            <div class="diagram-text">HABITASSE</div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-6 order-1 order-lg-2 col-md-6 col-lg-3 ">
+                    <h5 class="gray-title text-center">What Client's Say?</h5>
+                    <blockquote class="blockquote-2">
+                        <small>Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque
+                            lectus vehicula mattis. Nulla ac massa at dolor condimentum</small>
+                        <cite>Jhon Doe</cite>
+                    </blockquote>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mb-3">
+            <div class="row justify-content-md-center">
+                <div class="col-3 col-lg-2">
+                    <h6 class="gray-title"> Our Happy Clients</h6>
+                </div>
+                <div class="col-9 col-lg-10 pt-2">
+                    <hr />
+                </div>
+                <div id="malihu" style="overflow: auto; width: 100%; height: auto;">
+                    <ul>
+                        <li class="mx-3">
+                            <div class="slider-img-container"><img src="img/jquery.png" alt="Breads" /></div>
+                        </li>
+                        <li class="mx-3">
+                            <div class="slider-img-container"><img src="img/jquery.png" alt="Breads" /></div>
+                        </li>
+                        <li class="mx-3">
+                            <div class="slider-img-container"><img src="img/jquery.png" alt="Breads" /></div>
+                        </li>
+                        <li class="mx-3">
+                            <div class="slider-img-container"><img src="img/jquery.png" alt="Breads" /></div>
+                        </li>
+                        <li class="mx-3">
+                            <div class="slider-img-container"><img src="img/jquery.png" alt="Breads" /></div>
+                        </li>
+                        <li class="mx-3">
+                            <div class="slider-img-container"><img src="img/jquery.png" alt="Breads" /></div>
+                        </li>
+                        <li class="mx-3">
+                            <div class="slider-img-container"><img src="img/jquery.png" alt="Breads" /></div>
+                        </li>
+                        <li class="mx-3">
+                            <div class="slider-img-container"><img src="img/jquery.png" alt="Breads" /></div>
+                        </li>
+                        <li class="mx-3">
+                            <div class="slider-img-container"><img src="img/jquery.png" alt="Breads" /></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="upper-footer pb-5">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-6 col-lg-4 ">
+                    <div class="large_text text-white"><span class='bold'>MODUS</span>versus</div>
+                    <div class="footer-describe-text">
+                        <small> ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida
+                            pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum
+                            nec.</small>
+                    </div>
+                    <div>
+                        <small>Phone: </small>
+                        <div class="footer-contacts">182 2569 5896</div>
+                    </div>
+                    <div>
+                        <small>e-mail: </small>
+                        <div class="footer-contacts">info@modu.versus</div>
+                    </div>
+                </div>
+                <div class="order-3 order-lg-1 col-6 col-lg-2 company pt-3">
+                    <h5 class="footer-title">Company</h5>
+                    <div><img src="img/arrow.png" alt='arrow' /><a class="footer-about-link-item"
+                            href="#"><small>About</small></a>
+                    </div>
+                    <div><img src="img/arrow.png" alt='arrow' /><a class="footer-about-link-item"
+                            href="#"><small>FAQ</small></a></div>
+                    <div><img src="img/arrow.png" alt='arrow' /><a class="footer-about-link-item"
+                            href="#"><small>Contact</small></a>
+                    </div>
+                    <div><img src="img/arrow.png" alt='arrow' /><a class="footer-about-link-item"
+                            href="#"><small>Terms</small></a>
+                    </div>
+                    <div><img src="img/arrow.png" alt='arrow' /><a class="footer-about-link-item"
+                            href="#"><small>Privacy</small></a>
+                    </div>
+                    <div><img src="img/arrow.png" alt='arrow' /><a class="footer-about-link-item"
+                            href="#"><small>Testimonials</small></a>
+                    </div>
+                </div>
+                <div class="order-2 order-lg-2 col-6 col-lg-2 pt-3">
+                    <h5 class="footer-title">Community</h5>
+                    <div><img src="img/arrow.png" alt='arrow' /><a class="footer-about-link-item"
+                            href="#"><small>Blog</small></a>
+                    </div>
+                    <div><img src="img/arrow.png" alt='arrow' /><a class="footer-about-link-item"
+                            href="#"><small>Forum</small></a>
+                    </div>
+                    <div><img src="img/arrow.png" alt='arrow' /><a class="footer-about-link-item"
+                            href="#"><small>Support</small></a>
+                    </div>
+                    <div><img src="img/arrow.png" alt='arrow' /><a class="footer-about-link-item"
+                            href="#"><small>Newsletter</small></a>
+                    </div>
+                </div>
+                <div class="order-1 order-lg-3 col-6 col-lg-4 pt-3">
+                    <h5 class="footer-title text-white"><em>from the</em> BLOG</h5>
+                    <div class="footer-blog">
+                        <div class="footer-blog-image mt-3">
+                            <img src="img/noimg.png" alt="noimg" />
+                        </div>
+                        <div class="footer-blog-text">
+                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
+                            <div><small>26 May, 2013</small></div>
+                        </div>
+                    </div>
+                    <div class="footer-blog">
+                        <div class="footer-blog-image mt-3">
+                            <img src="img/noimg.png" alt="noimg" />
+                        </div>
+                        <div class="footer-blog-text">
+                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
+                            <div><small>26 May, 2013</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer-container">
+                <div class="col-4 col-lg-2 mt-2">
+                    <small>2013 ModusVersus</small>
+                </div>
+                <div class="col-5 col-md-4   col-lg-3  ">
+                    <img src="img/Facebook.png" alt='arrow' />
+                    <img src="img/google.png" alt='arrow' />
+                    <img src="img/twetter.png" alt='arrow' />
+                    <img src="img/wifi.png" alt='arrow' />
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $("#malihu").mThumbnailScroller();
+        });
+    </script>
+</body>
+</html>
